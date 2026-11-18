@@ -10,7 +10,7 @@ footer_url: "https://github.com/rhl-bthr"
 footer_text: "Theme by rhl-bthr"
 
 profile-picture: assets/이빨쿠마.jpeg
-favicon_location: assets/favicon.ico
+favicon_location: assets/이빨쿠마.ico
 
 permalink: /:year-:month-:day-:title/
 sass:
