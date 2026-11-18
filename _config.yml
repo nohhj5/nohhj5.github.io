@@ -1,6 +1,6 @@
-title: nohhj5
-author: nohhj5
-subtitle: ""
+title: "노현정의 블로그"
+author: "nohhj5"
+subtitle: "노현정의 블로그입니다"
 
 url: "https://nohhj5.github.io"
 baseurl: ""
@@ -9,7 +9,7 @@ footer_only_homepage: true
 footer_url: "https://github.com/rhl-bthr"
 footer_text: "Theme by rhl-bthr"
 
-profile-picture: assets/profile.png
+profile-picture: assets/이빨쿠마.jpeg
 favicon_location: assets/favicon.ico
 
 permalink: /:year-:month-:day-:title/
