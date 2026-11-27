@@ -1,0 +1,155 @@
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+
+
+body {
+    background-color: #f7f7f7;
+    color: #343a40;
+    font-family: 'Galmuri11', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+    padding: 30px;
+}
+
+section {
+    background-color: #f7f7f7;
+    border: 2px solid #343a40;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #c5d5bd;
+    border: 2px solid #343a40;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+/*        "profile welcome" */
+        "profile categories"
+        "posts posts";
+    gap: 20px;
+}
+
+.profile {
+    grid-area: profile;
+}
+
+/*
+.welcome {
+    grid-area: welcome;
+}
+*/
+
+.categories {
+    grid-area: categories;
+}
+
+.posts {
+    grid-area: posts;
+}
+
+section {
+    margin-bottom: 0;
+}
+
+
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.category-grid button {
+    height: 90px;
+    font-size: 20px;
+}
+
+.category-grid button:hover {
+    background-color: #a8bfa0;
+    transform: translateY(-3px);
+}
+
+.category-grid button:active {
+    transform: translateY(3px);
+}
+
+.profile-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    box-sizing: border-box;
+    image-rendering: pixelated;
+}
+
+
+
+h1, h2, button {
+    font-family: 'Galmuri11', sans-serif;
+}
+
+h1, h2 {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+
+
+.category-grid a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: #c5d5bd;
+    border: 2px solid #343a40;
+    font-family: 'Galmuri11', sans-serif;
+    font-size: 18px;
+    color: inherit;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.category-grid a:hover {
+    transform: translateY(-3px);
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "profile"
+            "categories"
+            "posts";
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .profile-img {
+        max-width: 200px;
+    }
+
+    .category-grid a {
+        height: 70px;
+        font-size: 14px;
+        padding: 8px;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+}
